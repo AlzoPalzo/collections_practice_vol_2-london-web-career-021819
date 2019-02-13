@@ -58,7 +58,7 @@ end
 def find_cool(data)
   dat = []
   data.each do |key|
-    if key.include?("cool")
+    if key.values.include?("cool")
       dat << key
     end
   end
