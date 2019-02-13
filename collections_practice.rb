@@ -43,7 +43,11 @@ def count_elements(array)
   new_array
 end
 
-def merge_data(keys, data)
-
-
+def merge_data(arr1, arr2)
+  merged_data = []
+  arr1.each do |key, val|
+    merged_data << key
+  end
+  arr2.each do |name, data|
+    merged_data << data
 end
