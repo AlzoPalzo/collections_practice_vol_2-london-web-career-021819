@@ -53,3 +53,12 @@ def merge_data(keys, data)
   end
   merged_data
 end
+
+
+def find_cool(data)
+  data.each do |key|
+    if key.values.include?("cool")
+      key
+    end
+  end
+end
