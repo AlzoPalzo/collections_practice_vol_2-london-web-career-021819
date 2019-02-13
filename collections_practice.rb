@@ -36,10 +36,9 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-  new_array = []
-  array.each do |hash|
-    if !(new_array[hash])
-      new_array[hash]
-    end
+  new_array = array.uniq
+  new_array.each do |element|
+    element[:count] = array.count(element)
   end
+  new_array
 end
