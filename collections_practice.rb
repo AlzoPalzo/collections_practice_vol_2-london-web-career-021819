@@ -50,4 +50,6 @@ def merge_data(arr1, arr2)
   end
   arr2.each do |name, data|
     merged_data << data
+  end
+  merged_data
 end
