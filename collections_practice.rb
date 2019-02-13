@@ -76,5 +76,5 @@ def organize_schools(schools)
       end
     end
   end
-  new_hashs
+  new_hash
 end
