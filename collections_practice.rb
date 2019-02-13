@@ -47,9 +47,9 @@ def merge_data(arr1, arr2)
   merged_data = []
   arr1.each do |key, val|
     merged_data << key
-  end
-  arr2.each do |name, data|
-    merged_data << data
+    arr2.each do |name, data|
+      merged_data << data
+    end
   end
   merged_data
 end
