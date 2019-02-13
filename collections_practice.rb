@@ -46,6 +46,7 @@ end
 def merge_data(keys, data)
   merged_data = []
   keys.each do |key|
+    merged_data << key
     data.each do |person, data_type|
       if key[:first_name] == person
         merged_data << key.merge(data_type)
