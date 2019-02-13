@@ -65,7 +65,7 @@ def find_cool(data)
   dat
 end
 
-def organized_schools(schools)
+def organize_schools(schools)
   new_hash = {}
   schools.each do |school, location|
     location.each do |loc_name|
