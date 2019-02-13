@@ -64,3 +64,17 @@ def find_cool(data)
   end
   dat
 end
+
+def organized_schools(schools)
+  new_hash = {}
+  schools.each do |school, location|
+    location.each do |loc_name|
+      if !(new_hash[loc_name])
+        new_hash[location] = [school]
+      else
+        new_hash[location] << school      
+      end  
+    end
+  end  
+  new_hashs
+end
