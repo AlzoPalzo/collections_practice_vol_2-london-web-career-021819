@@ -48,6 +48,7 @@ def merge_data(keys, data)
   keys.each do |key|
     data.each do |person|
       key.merge!(person)
+      merged_data << key
     end
   end
   merged_data
