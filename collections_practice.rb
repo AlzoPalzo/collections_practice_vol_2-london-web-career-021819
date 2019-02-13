@@ -72,9 +72,9 @@ def organized_schools(schools)
       if !(new_hash[loc_name])
         new_hash[location] = [school]
       else
-        new_hash[location] << school      
-      end  
+        new_hash[location] << school
+      end
     end
-  end  
+  end
   new_hashs
 end
