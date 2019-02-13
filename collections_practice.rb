@@ -46,9 +46,8 @@ end
 def merge_data(keys, data)
   merged_data = []
   keys.each do |key|
-    data.each do |person, data_type|
-      key.merge!(data_type)
-      merge_data << key
+    data.each do |person|
+      key.merge!(person)
     end
   end
   merged_data
