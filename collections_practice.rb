@@ -76,4 +76,5 @@ def organize_schools(schools)
       new_hash[location] << school
     end
   end
+  new_hash
 end
